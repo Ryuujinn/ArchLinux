@@ -1,0 +1,59 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file",        // Logo type: auto, builtin, small, file, etc.
+    "source": "/home/roy/.config/fastfetch/ascii.txt",      // Built-in logo name or file path
+    "padding": {
+        "top": 0,          // Top padding
+        "left": 0,         // Left padding
+        "right": 1        // Right padding
+    },
+    "color": {             // Override logo colors
+        "1": "light_white",
+    }
+},
+  "display": {
+    "separator": ": ",     // Separator between keys and values
+    "color": {
+        "keys": "light_red",    // Key color
+        "title": "light_red"     // Title color
+    },
+    "key": {
+               // Aligns keys to this width
+        "type": "string"   // string, icon, both, or none
+    },
+    "bar": {
+        "width": 10,       // Width of percentage bars
+        "charElapsed": "■", // Character for elapsed portion
+        "charTotal": "-"   // Character for total portion
+    },
+    "percent": {
+        "type": 9,         // 1=number, 2=bar, 3=both, 9=colored number
+        "color": {
+            "red": "light_red",
+            "green": "light_green",
+            "yellow": "light_yellow",
+                 }
+                }
+              },
+  "modules": [
+    "break",
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "cpu",
+    "gpu",
+    "packages",
+    "shell",
+    "de",
+    "wm",
+    "theme",
+    "terminal",
+    "uptime",
+    "memory",
+    "swap",
+    "disk",
+  ]
+}
